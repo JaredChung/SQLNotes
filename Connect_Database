@@ -1,11 +1,12 @@
 
 --Connect to SQL Server 2008 for Pandas Python
 
-conn = pypyodbc.connect('DRIVER={SQL Server};SERVER=AQUSYDDB02;DATABASE=AQUEON;UID=fill;PWD=fill')
 --"fill" replace with ID and Password
+conn = pypyodbc.connect('DRIVER={SQL Server};SERVER=AQUSYDDB02;DATABASE=AQUEON;UID=fill;PWD=fill')
 
-waitstats = psql.read_frame('SELECT CardCode FROM OCRD', conn)
 -- Example access of Database using a query
+waitstats = psql.read_frame('SELECT CardCode FROM OCRD', conn)
+
 
 
 --Connect Database to Excel Spreadsheet
