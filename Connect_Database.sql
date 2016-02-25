@@ -3,10 +3,11 @@
 
 --"fill" replace with ID and Password
 import pypyodbc
+import pandas as pd
 conn = pypyodbc.connect('DRIVER={SQL Server};SERVER=AQUSYDDB02;DATABASE=AQUEON;UID=fill;PWD=fill')
 
 -- Example access of Database using a query
-waitstats = psql.read_frame('SELECT CardCode FROM OCRD', conn)
+waitstats = pd.read_frame('SELECT CardCode FROM OCRD', conn)
 
 
 
