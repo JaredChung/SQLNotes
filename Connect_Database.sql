@@ -2,6 +2,7 @@
 --Connect to SQL Server 2008 for Pandas Python
 
 --"fill" replace with ID and Password
+import pypyodbc
 conn = pypyodbc.connect('DRIVER={SQL Server};SERVER=AQUSYDDB02;DATABASE=AQUEON;UID=fill;PWD=fill')
 
 -- Example access of Database using a query
