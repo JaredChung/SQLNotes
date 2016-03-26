@@ -1,6 +1,6 @@
 # SQLNotes
 
-Tips
+Bonus SQL Scripts
 SQL Server 2008
 
 --List All Tables in a Database
